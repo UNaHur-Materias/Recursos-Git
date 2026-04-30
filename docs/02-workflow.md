@@ -121,10 +121,10 @@ git push -u origin feature/login
 
 ## ⚠️ Cosas que NO deberías hacer
 
-❌ Trabajar directo en `main`
-❌ Hacer commits gigantes
-❌ No revisar con `git status`
-❌ Subir código que no compila
+❌ Trabajar directo en `main`   
+❌ Hacer commits gigantes   
+❌ No revisar con `git status`   
+❌ Subir código que no compila   
 
 ---
 
