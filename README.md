@@ -1,8 +1,11 @@
 # 📚 Recursos de Git
 
-Bienvenidos 👋 Este repositorio reúne buenas prácticas y comandos esenciales de Git.
+## Bienvenidos 👋 Este repositorio reúne buenas prácticas y comandos esenciales de Git.
 
-## 📖 Contenidos
+---
+
+<details>
+  <summary>📖 Contenidos</summary>
 
 - [Introducción](docs/01-introduccion.md)
 - [Workflow básico](docs/02-workflow.md)
@@ -14,8 +17,26 @@ Bienvenidos 👋 Este repositorio reúne buenas prácticas y comandos esenciales
 - [Autenticación (SSH / Token)](docs/08-auth.md)
 - [Buenas prácticas](docs/09-buenas-practicas.md)
 
+</details>
+
+<details>
+  <summary>🧪 Scripts</summary>
+
+- [Próximamente](#)
+
+</details>
+
+<details>
+  <summary>💡 Tips</summary>
+
+- [Próximamente](#)
+
+</details>
+
 ---
 
 ## 🔎 Cómo buscar contenido
 
 Usá `Ctrl + F` dentro del repo o el buscador de GitHub arriba ☝️
+
+
