@@ -63,10 +63,10 @@ refactor: mejora estructura del servicio
 
 ## ⚠️ Mensajes que NO sirven
 
-❌ `"arreglos"`
-❌ `"cosas"`
-❌ `"update"`
-❌ `"cambios varios"`
+❌ `"arreglos"`   
+❌ `"cosas"`   
+❌ `"update"`   
+❌ `"cambios varios"`   
 
 👉 No dicen nada. En 2 semanas no te acordás qué hiciste.
 
