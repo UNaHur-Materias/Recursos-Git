@@ -1,3 +1,54 @@
+<#
+====================================================================================================
+🧰 GitHub Repo Initializer & Sync (CLI)
+
+Descripción:
+Script de automatización en PowerShell (PS1) diseñado para agilizar la creación de repositorios
+en organizaciones de GitHub y su inmediata vinculación con proyectos locales.
+
+Ideal para docentes o administradores que necesitan inicializar rápidamente estructuras de trabajo,
+exámenes o plantillas de código, garantizando que el entorno local y el remoto queden perfectamente
+sincronizados en un solo paso, sin lidiar con comandos manuales repetitivos.
+
+----------------------------------------------------------------------------------------------------
+
+Funcionalidades principales:
+- Creación interactiva de repositorios dentro de una organización específica.
+- Configuración dinámica de visibilidad (Público / Privado).
+- Conversión automatizada a Repositorio Plantilla (Template) mediante parches a la API de GitHub.
+- Validación previa de la existencia de la ruta local para evitar ejecuciones fallidas.
+- Inicialización inteligente de Git local (rama 'main') si el directorio no está versionado.
+- Limpieza automática de remotos previos (`origin`) para prevenir conflictos de vinculación.
+- Automatización del flujo completo de despliegue inicial (Add, Commit y Push Upstream).
+
+----------------------------------------------------------------------------------------------------
+
+Prerequisitos:
+- Sistema operativo: Windows con PowerShell 5.1 o superior.
+- GitHub CLI (`gh`) instalado en el sistema.
+- Sesión de GitHub activa y autenticada en la consola con los permisos necesarios para 
+  crear repositorios en la organización destino. Se resuelve previamente ejecutando:
+    gh auth login
+- Git instalado y configurado globalmente en la máquina.
+
+----------------------------------------------------------------------------------------------------
+
+Notas:
+- Si la carpeta local está completamente vacía, Git no podrá realizar el primer commit, lo que
+  provocará una advertencia en el paso final del Push, aunque el repositorio remoto se creará igual.
+- El script sobrescribe de manera segura el remote `origin` local si este ya existía.
+- La conversión a template (`is_template=true`) utiliza un comando directo de la API de GitHub, 
+  por lo que requiere conexión a internet estable y alcances (scopes) de token adecuados.
+
+----------------------------------------------------------------------------------------------------
+
+Versión: 1.0.0
+Fecha: 2026-05-18
+Autor: Mauricio
+
+====================================================================================================
+#>
+
 # 1. Solicitar los datos básicos
 $miOrganizacion = Read-Host "Ingrese nombre de la orga"
 $miRepo = Read-Host "Ingrese nombre del repo"
